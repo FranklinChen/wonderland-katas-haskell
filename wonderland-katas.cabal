@@ -19,8 +19,11 @@ library
   hs-source-dirs:      src
   ghc-options:         -Wall
   exposed-modules:     Kata.AlphabetCipher
+                     , Kata.WonderlandNumber
   build-depends:       base >= 4 && <= 5
                      , array
+                     , containers
+                     , digits
 
 executable wonderland-katas
   hs-source-dirs:      app
@@ -38,6 +41,8 @@ test-suite spec
   main-is:             Spec.hs
   build-depends:       base >= 4 && <= 5
                      , wonderland-katas
+                     , containers
+                     , digits
                      , hspec
                      , QuickCheck
 
